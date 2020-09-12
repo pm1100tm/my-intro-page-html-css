@@ -5,7 +5,461 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="Intro Page" />
+    <meta name="author" content="pm1100tm" />
+    <link rel="shortcut icon" href="../img/robot.svg" type="image/x-icon" />
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:wght@100;400;700&family=M+PLUS+1p:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <script src="../js/test.js"></script>
+
+    <title>IntroPage</title>
   </head>
-  <body></body>
+  <body>
+    <!-- <body> -->
+    <header>
+      <!-- area : navigation -->
+      <div class="container">
+        <nav class="navbar area-container">
+          <!-- logo -->
+          <div class="logo-area">
+            <div class="logo-area-left">
+              <div class="logo-img-area">
+                <img src="../img/robot.svg" alt="Logo" id="logo-img" />
+              </div>
+              <div class="logo-title">
+                <h4>
+                  SWD
+                  <br />
+                  <span>14th_Wecoder</span>
+                </h4>
+              </div>
+            </div>
+            <div class="menu-hamburgar-icon">
+              <img src="../img/bars.svg" alt="Logo" id="hamburgar-img" />
+            </div>
+          </div>
+
+          <!-- menu -->
+          <div class="navbar-menu">
+            <!-- menu-button -->
+            <div class="menu-btn">
+              <button class="menu-items">Home</button>
+              <button class="menu-items">About</button>
+              <button class="menu-items">Experience</button>
+              <button class="menu-items">Interest</button>
+              <button class="menu-items">Contact</button>
+            </div>
+
+            <div class="stroke-line devide-menu"></div>
+
+            <!-- menu-button-extra -->
+            <div class="menu-btn-sub">
+              <button class="menu-items sub-btn">
+                Korean
+                <span>/</span>
+              </button>
+              <button class="menu-items sub-btn">
+                English
+                <span>/</span>
+              </button>
+              <button class="menu-items sub-btn">
+                Japanese
+                <span>/</span>
+              </button>
+              <button class="menu-items sub-btn mode-change">ON/OFF</button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- section : home -->
+    <section class="section area-container">
+      <div class="home">
+        <!-- left area -->
+        <div class="home-left">
+          <div class="home-left-div">
+            <h1>Hello, I'm</h1>
+            <div class="wecoder-desc">
+              <h3 id="fourteenth">14th_</h3>
+              <div class="wecoder-div">
+                <h3 id="wecoder">WeCoder</h3>
+                <div></div>
+              </div>
+            </div>
+            <br />
+            <br />
+            <h4>A member of the team, Macbook of secret.</h4>
+          </div>
+        </div>
+        <!-- right area -->
+        <div class="home-right">
+          <img
+            src="../img/icon-keyboard.png"
+            alt="home icon keyboard"
+            id="icon-keyboard"
+          />
+          <img src="../img/icon-code.png" alt="home icon code" id="icon-code" />
+          <img
+            src="../img/icon-mouse.png"
+            alt="home icon mouse"
+            id="icon-mouse"
+          />
+          <img
+            src="../img/icon-coffee.svg"
+            alt="home icon coffee"
+            id="icon-coffee"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- section: About -->
+    <section class="section area-container about">
+      <div class="stroke-line"></div>
+      <div class="about-title-div">
+        <div class="about-left-div">
+          <img
+            src="../img/angle-double-right.png"
+            alt="home-image arrow"
+            class="arrow-img"
+          />
+          <h1 class="test">About Me</h1>
+        </div>
+        <div class="about-right-div">
+          <img src="../img/icon-close.png" alt="" class="img-icon-close" />
+        </div>
+      </div>
+      <!-- about contents -->
+      <div class="content-div about-description">
+        <ul>
+          <li>
+            Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: SWD(SHIM WONDU)
+          </li>
+          <li>
+            Live in&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Seoul
+          </li>
+          <li>
+            Be styding : HTML&CSS, JavaScript, React, Python, DJango,
+            PostgresSQL
+          </li>
+        </ul>
+      </div>
+      <br />
+      <!-- about-content -->
+      <div class="about-content-title">
+        <div class="about-title-left"><h1 class="front">Front-End</h1></div>
+        <div class="about-title-right"><h1 class="back">Back-End</h1></div>
+      </div>
+
+      <div class="content-div about-content">
+        <!-- frontend area-->
+        <div class="about-title-media"><h1 class="front">Front-End</h1></div>
+        <div class="frontend media-about-area">
+          <!-- html -->
+          <div class="about-content-div">
+            <div class="blackbox"></div>
+            <h5 class="study-percentage">80%</h5>
+            <img src="../img/study/html.svg" alt="html" class="about-img" />
+          </div>
+
+          <!-- css -->
+          <div class="about-content-div">
+            <div class="blackbox"></div>
+            <h5 class="study-percentage">80%</h5>
+            <img src="../img/study/css.svg" alt="css" class="about-img" />
+          </div>
+
+          <!-- javascript -->
+          <div class="about-content-div">
+            <div class="blackbox"></div>
+            <h5 class="study-percentage">80%</h5>
+            <img src="../img/study/js.png" alt="javascript" class="about-img" />
+          </div>
+
+          <!-- react -->
+          <div class="about-content-div">
+            <div class="blackbox"></div>
+            <h5 class="study-percentage">80%</h5>
+            <img src="../img/study/react.svg" alt="react" class="about-img" />
+          </div>
+
+          <!-- empty box -->
+          <div class="about-content-div emptybox">
+            <div class="blackbox whitebox"></div>
+            <h5 class="plus-letter">+</h5>
+            <!-- <img src="" alt=""> -->
+          </div>
+        </div>
+
+        <!-- backend area-->
+        <div class="about-title-media"><h1 class="front">Back-End</h1></div>
+        <div class="backend media-about-area">
+          <!-- python -->
+          <div class="about-content-div">
+            <div class="blackbox"></div>
+            <h5 class="study-percentage">80%</h5>
+            <img src="../img/study/python.svg" alt="python" class="about-img" />
+          </div>
+
+          <!-- nodejs -->
+          <div class="about-content-div">
+            <div class="blackbox"></div>
+            <h5 class="study-percentage">80%</h5>
+            <img src="../img/study/nodejs.svg" alt="python" class="about-img" />
+          </div>
+
+          <!-- django -->
+          <div class="about-content-div">
+            <div class="blackbox"></div>
+            <h5 class="study-percentage">80%</h5>
+            <img src="../img/study/django.png" alt="django" class="about-img" />
+          </div>
+
+          <!-- mysql -->
+          <div class="about-content-div">
+            <div class="blackbox"></div>
+            <h5 class="study-percentage">80%</h5>
+            <img src="../img/study/mysql.svg" alt="mysql" class="about-img" />
+          </div>
+
+          <!-- empty box -->
+          <div class="about-content-div emptybox">
+            <div class="blackbox whitebox"></div>
+            <h5 class="plus-letter">+</h5>
+            <!-- <img src="" alt=""> -->
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <h1 class="etc-title about-content-title">ETC</h1>
+      <!-- aws -->
+
+      <div class="etc">
+        <div class="about-title-media"><h1 class="etc">ETC</h1></div>
+        <div class="etc-items">
+          <div class="about-content-div etc-aws">
+            <div class="blackbox"></div>
+            <h5 class="study-percentage">80%</h5>
+            <img
+              src="../img/study/aws.svg"
+              alt="amazon web service"
+              class="about-img"
+            />
+          </div>
+          <div class="about-content-div etc-aws emptybox">
+            <div class="blackbox whitebox"></div>
+            <h5 class="plus-letter">+</h5>
+            <!-- <img src="" alt=""> -->
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- section:experience -->
+    <section class="section area-container experience">
+      <!-- title area -->
+      <div class="stroke-line"></div>
+      <div class="experience-title-div">
+        <div class="experience-left-div">
+          <img
+            src="../img/angle-double-right.png"
+            alt="home-image arrow"
+            class="arrow-img"
+          />
+          <h1>Experience</h1>
+        </div>
+        <br />
+        <div class="experience-right-div">
+          <img src="../img/icon-close.png" alt="" class="img-icon-close" />
+        </div>
+      </div>
+      <br />
+      <!-- content area -->
+      <div class="projects">
+        <div class="project-items">
+          <div class="project-item-img">
+            <img src="../img/robot.svg" alt="" class="project-thumbnail" />
+          </div>
+          <div class="project-item-desc">
+            <li>
+              <span class="project-desc-title">Project</span>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
+                aliquid nesciunt voluptas tempora id labore, nulla optio
+              </p>
+            </li>
+            <li>
+              <span class="project-desc-title">Roll</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusamus fuga delectus voluptatem placeat similique
+                reprehenderit atque, libero, exercitationem nemo inventore
+                totam. Ea ducimus officia nostrum aperiam error vero assumenda
+                aliquam? Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Provident magni illo earum eos unde nam rerum quisquam rem
+                dolores qui, consequatur, iure alias praesentium delectus
+                incidunt facere dicta! Quia, non.
+              </p>
+            </li>
+          </div>
+        </div>
+        <div class="project-items">
+          <div class="project-item-img">
+            <img src="../img/robot.svg" alt="" class="project-thumbnail" />
+          </div>
+          <div class="project-item-desc">
+            <li>
+              <span class="project-desc-title">Project</span>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
+                aliquid nesciunt voluptas tempora id labore, nulla optio
+              </p>
+            </li>
+            <li>
+              <span class="project-desc-title">Roll</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusamus fuga delectus voluptatem placeat similique
+                reprehenderit atque, libero, exercitationem nemo inventore
+                totam. Ea ducimus officia nostrum aperiam error vero assumenda
+                aliquam? Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Provident magni illo earum eos unde nam rerum quisquam rem
+                dolores qui, consequatur, iure alias praesentium delectus
+                incidunt facere dicta! Quia, non.
+              </p>
+            </li>
+          </div>
+        </div>
+        <div class="project-items">
+          <div class="project-item-img">
+            <img src="../img/robot.svg" alt="" class="project-thumbnail" />
+          </div>
+          <div class="project-item-desc">
+            <li>
+              <span class="project-desc-title">Project</span>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
+                aliquid nesciunt voluptas tempora id labore, nulla optio
+              </p>
+            </li>
+            <li>
+              <span class="project-desc-title">Roll</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusamus fuga delectus voluptatem placeat similique
+                reprehenderit atque, libero, exercitationem nemo inventore
+                totam. Ea ducimus officia nostrum aperiam error vero assumenda
+                aliquam? Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Provident magni illo earum eos unde nam rerum quisquam rem
+                dolores qui, consequatur, iure alias praesentium delectus
+                incidunt facere dicta! Quia, non.
+              </p>
+            </li>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section:interest -->
+    <section class="section area-container interest">
+      <div class="stroke-line"></div>
+      <!-- interest title  -->
+      <div class="interest-left-div">
+        <img
+          src="../img/angle-double-right.png"
+          alt="home-image arrow"
+          class="arrow-img"
+        />
+        <h1>Interest</h1>
+      </div>
+
+      <!-- interest content -->
+      <div class="interest-contents">
+        <figure class="interest-content">
+          <img src="../img/interest/keyboard.svg" alt="interest-keyboard" />
+          <figcaption class="interest-desc">Keyboard</figcaption>
+        </figure>
+        <figure class="interest-content">
+          <img src="../img/interest/netflix.png" alt="interest-netflix" />
+          <figcaption class="interest-desc">Netflix</figcaption>
+        </figure>
+        <figure class="interest-content">
+          <img src="../img/interest/jpop.svg" alt="interest-JPOP" />
+          <figcaption class="interest-desc">J-POP</figcaption>
+        </figure>
+        <figure class="interest-content">
+          <img src="../img/interest/nba.svg" alt="interest-NBA" />
+          <figcaption class="interest-desc">NBA</figcaption>
+        </figure>
+        <figure class="interest-content">
+          <img src="../img/interest/kickboard.png" alt="interest-kickboard" />
+          <figcaption class="interest-desc">Kickboard</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- section:contact -->
+    <section class="section area-container contact">
+      <div class="stroke-line"></div>
+      <!-- contact-title -->
+      <div class="contact-left-div">
+        <img
+          src="../img/angle-double-right.png"
+          alt="home-image arrow"
+          class="arrow-img"
+        />
+        <h1>Contact</h1>
+      </div>
+      <!-- contact-input -->
+      <div class="contact-input-box">
+        <div class="contact-input">
+          <!-- name -->
+          <input type="text" class="input-text" placeholder="Name" />
+
+          <!-- email -->
+          <input type="email" class="input-text" placeholder="Email" />
+
+          <!-- textarea -->
+          <textarea
+            name=""
+            class="input-text input-text-content"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+        </div>
+        <div>
+          <button class="bt-send">SEND</button>
+        </div>
+      </div>
+      <div class="contact-icon-area">
+        <img src="../img/github.svg" alt="github" />
+        <img src="../img/tistory.svg" alt="tiStory" />
+        <img src="../img/linkedin.svg" alt="linked-in" />
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer section-container">
+      <div>Copyright ©2020 SWD all rights reserved.</div>
+    </footer>
+  </body>
 </html>
