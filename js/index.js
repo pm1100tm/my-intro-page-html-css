@@ -1,61 +1,16 @@
 /** @format */
 
-/* const home = document.getElementById("menu-home");
-home.addEventListener("click", function () {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: "smooth"
-  });
-});
-
-const about = document.getElementById("menu-about");
-about.addEventListener("click", function () {
-  const section_about = this.dataset.link;
-  window.scrollTo({
-    top: document.getElementById(section_about).offsetTop - 70,
-    left: 0,
-    behavior: "smooth"
-  });
-});
-
-const exp = document.getElementById("menu-experience");
-exp.addEventListener("click", function () {
-  const section_exp = this.dataset.link;
-  window.scrollTo({
-    top: document.getElementById(section_exp).offsetTop - 70,
-    left: 0,
-    behavior: "smooth"
-  });
-});
-
-const interest = document.getElementById("menu-interest");
-interest.addEventListener("click", function () {
-  const section_interest = this.dataset.link;
-  window.scrollTo({
-    top: document.getElementById(section_interest).offsetTop - 70,
-    left: 0,
-    behavior: "smooth"
-  });
-});
-
-const contact = document.getElementById("menu-contact");
-contact.addEventListener("click", function () {
-  const section_contact = this.dataset.link;
-  window.scrollTo({
-    top: document.getElementById(section_contact).offsetTop - 70,
-    left: 0,
-    behavior: "smooth"
-  });
-});
- */
-
+// const
 const menu = document.querySelector(".menu-btn");
+const submenu = document.querySelector(".menu-btn-sub");
+const menuToggleBtn = document.querySelector(".menu-hamburgar-div");
+const navbar = document.querySelector(".container");
+
+// menu button event : scroll to each section area.
 menu.addEventListener("click", (event) => {
   const section = event.target.dataset.link;
   let offsetTop = 0;
   if ("home" != section) {
-    console.log("1");
     offsetTop = document.getElementById(section).offsetTop - 70;
   } else {
     //do nothing
@@ -66,4 +21,32 @@ menu.addEventListener("click", (event) => {
     left: 0,
     behavior: "smooth"
   });
+
+  hideMenu();
 });
+
+menuToggleBtn.addEventListener("click", () => {
+  // console.log(menu.style.display);
+  if (menu.style.display === "none") {
+    showMenu();
+    console.log("1");
+    return false;
+  } else {
+    hideMenu();
+    console.log("2");
+    return false;
+  }
+  console.log("3");
+});
+
+function showMenu() {
+  menu.style.display = "block";
+  submenu.style.display = "flex";
+  navbar.style.height = "100%";
+}
+
+function hideMenu() {
+  menu.style.display = "none";
+  submenu.style.display = "none";
+  navbar.style.height = "70px";
+}

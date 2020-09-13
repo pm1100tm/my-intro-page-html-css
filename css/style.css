@@ -93,7 +93,7 @@ p {
   display: none;
 }
 
-/* -----navbar start-- */
+/* --navbar start-- */
 header {
   position: sticky;
   top: 0;
@@ -106,7 +106,6 @@ header {
 
 .container {
   background-color: var(--color-normal-green);
-  /* width: 100vw; */
   position: relative;
 }
 
@@ -122,7 +121,6 @@ header {
 }
 
 .navbar {
-  /* background-color: var(--color-normal-green); */
   display: flex;
   justify-content: space-between;
   padding: 10px 80px;
@@ -146,11 +144,18 @@ header {
   height: 60px;
 }
 
-.menu-hamburgar-icon {
+#menu-hamburgar-icon {
+  display: none;
+  width: 50px;
+  height: 50px;
+}
+
+/* .menu-hamburgar-div {
   width: 40px;
   height: 40px;
   display: none;
 }
+ */
 
 #logo-img,
 #hamburgar-img {
@@ -196,10 +201,6 @@ header {
   border-radius: 4px;
   background-color: var(--color-deep-blue);
   color: var(--color-normal-ivory);
-  /* padding: 10px 10px; */
-}
-
-.menu-btn button::selection {
 }
 
 .sub-btn {
@@ -212,7 +213,7 @@ header {
   margin-left: 20px;
   font-weight: var(--en-weight-regular) !important;
 }
-/* -----navbar end----- */
+/* --navbar end-- */
 
 /* section : home */
 .home {
@@ -221,11 +222,6 @@ header {
   align-items: center;
   position: relative;
   user-select: none;
-  /* flex-wrap: nowrap; */
-  /* background-image: url("../img/icon/icon-keyboard.svg");
-  background-repeat: no-repeat;
-  background-size: 40%;
-  background-position: top; */
 }
 
 .home-left {
@@ -337,13 +333,9 @@ header {
   padding: 0 80px;
   width: 100%;
 }
-/* end home */
+/* --section home end-- */
 
-/* .area-container {
-  padding: 20px 80px;
-} */
-
-/* about start*/
+/* --section about start--*/
 .about {
   background-color: var(--color-normal-ivory);
 }
@@ -386,7 +378,6 @@ header {
 
 .about-content {
   display: flex;
-  /* flex-wrap: wrap; */
 }
 
 .frontend {
@@ -413,7 +404,6 @@ header {
   width: 200px;
   height: 200px;
   padding: 20px 20px;
-  /* border-radius: 50%; */
 }
 
 .etc {
@@ -469,8 +459,9 @@ header {
 .about-content-div:hover .blackbox {
   opacity: 0.7;
 }
+/* --section about end-- */
 
-/* -----project----- */
+/* --section project start-- */
 .projects {
   display: flex;
   flex-direction: column;
@@ -519,7 +510,9 @@ figcaption {
   padding: 3px;
   text-align: center;
 }
+/* section project end */
 
+/* --section contack start-- */
 .contact {
   padding: 0 80px;
 }
@@ -591,7 +584,9 @@ figcaption {
   opacity: 0.7;
   margin: 0 16px;
 }
+/* section contact end */
 
+/* footer start */
 .footer {
   background-color: var(--color-grey);
   min-height: 40px;
@@ -609,6 +604,7 @@ figcaption {
   font-size: var(--font-micro);
   opacity: 0.3;
 }
+/* footer end */
 
 /* -----media-query----- */
 /* Extra small devices (phones, 600px and down) */
@@ -619,6 +615,10 @@ figcaption {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
+  .container {
+    height: 70px;
+  }
+
   .logo-area {
     width: 100%;
     justify-content: space-between;
@@ -627,12 +627,6 @@ figcaption {
 
   .navbar {
     margin: 0 -40px;
-  }
-
-  .menu-hamburgar-icon {
-    display: block;
-    position: relative;
-    top: -5px;
   }
 
   .menu-btn {
@@ -649,6 +643,19 @@ figcaption {
     font-size: var(--font-micro) !important;
     font-weight: var(--en-weight-bold) !important;
   }
+
+  /* FIXME */
+  #menu-hamburgar-icon {
+    display: block;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .menu-btn,
+  .stroke-line,
+  .menu-btn-sub {
+    display: none;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -663,7 +670,6 @@ figcaption {
     width: 100%;
     margin: 0;
   }
-
   .menu-btn-sub span {
     display: none;
   }
