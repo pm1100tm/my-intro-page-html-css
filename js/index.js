@@ -5,6 +5,7 @@ const menu = document.querySelector(".menu-btn");
 const submenu = document.querySelector(".menu-btn-sub");
 const menuToggleBtn = document.querySelector(".menu-hamburgar-div");
 const navbar = document.querySelector(".container");
+const mediaMaxWidth = 600;
 
 // menu button event : scroll to each section area.
 menu.addEventListener("click", (event) => {
@@ -22,7 +23,11 @@ menu.addEventListener("click", (event) => {
     behavior: "smooth"
   });
 
-  hideMenu();
+  if (window.innerWidth <= mediaMaxWidth) {
+    hideMenu();
+  } else {
+    /* do nothing */
+  }
 });
 
 menuToggleBtn.addEventListener("click", () => {
