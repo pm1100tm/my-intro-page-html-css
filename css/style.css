@@ -199,6 +199,9 @@ header {
   /* padding: 10px 10px; */
 }
 
+.menu-btn button::selection {
+}
+
 .sub-btn {
   font-size: var(--font-micro);
   font-weight: var(--en-weight-light) !important;

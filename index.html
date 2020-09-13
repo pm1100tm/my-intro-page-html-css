@@ -23,13 +23,12 @@
     />
 
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="text/javascript"  src="../js/index.js" charset="utf-8" defer></script>
 
-    <!-- <script src="../js/test.js"></script> -->
-
+    <!-- title -->
     <title>IntroPage</title>
   </head>
-  <body>
-    <!-- <body> -->
+  <body onload="init()">
     <header>
       <!-- area : navigation -->
       <div class="container">
@@ -57,11 +56,11 @@
           <div class="navbar-menu">
             <!-- menu-button -->
             <div class="menu-btn">
-              <button class="menu-items">Home</button>
-              <button class="menu-items">About</button>
-              <button class="menu-items">Experience</button>
-              <button class="menu-items">Interest</button>
-              <button class="menu-items">Contact</button>
+              <button class="menu-items" id="menu-home" data-link="home">Home</button>
+              <button class="menu-items" id="menu-about" data-link="section-about">About</button>
+              <button class="menu-items" id="menu-experience" data-link="section-experience">Experience</button>
+              <button class="menu-items" id="menu-interest" data-link="section-interest">Interest</button>
+              <button class="menu-items" id="menu-contact" data-link="section-contact"="">Contact</button>
             </div>
 
             <div class="stroke-line devide-menu"></div>
@@ -88,7 +87,7 @@
     </header>
 
     <!-- section : home -->
-    <section class="section area-container">
+    <section class="section area-container" id="section-home">
       <div class="home">
         <!-- left area -->
         <div class="home-left">
@@ -129,7 +128,7 @@
     </section>
 
     <!-- section: About -->
-    <section class="section area-container about">
+    <section class="section area-container about" id="section-about">
       <div class="stroke-line"></div>
       <div class="about-title-div">
         <div class="about-left-div">
@@ -273,7 +272,7 @@
     </section>
 
     <!-- section:experience -->
-    <section class="section area-container experience">
+    <section class="section area-container experience" id="section-experience">
       <!-- title area -->
       <div class="stroke-line"></div>
       <div class="experience-title-div">
@@ -378,7 +377,7 @@
     </section>
 
     <!-- section:interest -->
-    <section class="section area-container interest">
+    <section class="section area-container interest" id="section-interest">
       <div class="stroke-line"></div>
       <!-- interest title  -->
       <div class="interest-left-div">
@@ -416,7 +415,7 @@
     </section>
 
     <!-- section:contact -->
-    <section class="section area-container contact">
+    <section class="section area-container contact" id="section-contact">
       <div class="stroke-line"></div>
       <!-- contact-title -->
       <div class="contact-left-div">

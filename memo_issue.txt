@@ -19,6 +19,17 @@ skicty 를 사용. 스크롤을 내리면 body 와 header의 윗 부분 사이�
 3. footer box 고정하는 방법
 -문제점
 
--해결방법
+-해결 방법
 
 
+4. document.querySelector
+-문제점
+null 로 addEventListener 이벤트의 속성이 null
+Uncaught TypeError: Cannot read property 'addEventListener' of null
+
+-해결 방법 (::미해결)
+script 에 defer를 걸어준다.
+html 에서 script 태그를 body 의 가장 마지막에 넣어준다.
+
+querySelector 에 대해서 알아보지 않고 한 것이 오류의 원인.
+>>
