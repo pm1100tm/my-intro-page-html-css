@@ -11,6 +11,11 @@
   --color-white: #ffffff;
   --color-grey: #5e5e5f;
   --color-black: #3f4040;
+  --color-deep-blue: #1f4e5f;
+
+  /* filter value */
+  --filter-deep-blue: invert(26%) sepia(49%) saturate(550%) hue-rotate(150deg)
+    brightness(91%) contrast(94%);
 
   /* font */
   --font-family-ko: "Nanum Gothic", sans-serif;
@@ -149,8 +154,7 @@ header {
 
 #logo-img,
 #hamburgar-img {
-  filter: invert(23%) sepia(31%) saturate(3065%) hue-rotate(164deg)
-    brightness(89%) contrast(101%);
+  filter: var(--filter-deep-blue);
 }
 
 .logo-title h4 {
@@ -170,7 +174,9 @@ header {
 .navbar-menu {
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
   width: 100%;
+  margin-left: 10px;
 }
 
 .menu-items {
@@ -178,13 +184,25 @@ header {
   font-size: var(--font-small);
   font-weight: var(--en-weight-regular);
   color: var(--color-black);
-  padding: 0 20px;
+  padding: 10px 10px;
+  margin: 0 10px;
+}
+
+.menu-btn button {
+  min-width: 100px;
+}
+
+.menu-btn button:hover {
+  border-radius: 4px;
+  background-color: var(--color-deep-blue);
+  color: var(--color-normal-ivory);
+  /* padding: 10px 10px; */
 }
 
 .sub-btn {
   font-size: var(--font-micro);
   font-weight: var(--en-weight-light) !important;
-  padding: 0 0 !important;
+  padding: 10px 0 !important;
 }
 
 .mode-change {
