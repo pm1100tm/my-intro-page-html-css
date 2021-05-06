@@ -726,6 +726,9 @@ figcaption {
 
   .project-item-img {
     margin: 0 auto;
+    flex-basis: 20%;
+    flex-direction: column;
+    justify-items: center;
   }
 
   .project-item-desc {
@@ -795,6 +798,13 @@ figcaption {
     justify-content: center;
     margin-bottom: 40px;
   }
+}
+
+.company-proejct-img {
+  max-width: 200px;
+  max-height: 200px;
+  /* padding: 40px 10px 40px 0px; */
+  /* line-height: 200px; */
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
