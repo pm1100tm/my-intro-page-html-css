@@ -14,13 +14,12 @@
   --color-deep-blue: #1f4e5f;
 
   /* filter value */
-  --filter-deep-blue: invert(26%) sepia(49%) saturate(550%) hue-rotate(150deg)
-    brightness(91%) contrast(94%);
+  --filter-deep-blue: invert(26%) sepia(49%) saturate(550%) hue-rotate(150deg) brightness(91%) contrast(94%);
 
   /* font */
-  --font-family-ko: "Nanum Gothic", sans-serif;
-  --font-family-en: "Exo", sans-serif;
-  --font-family-jp: "M PLUS 1p", sans-serif;
+  --font-family-ko: 'Nanum Gothic', sans-serif;
+  --font-family-en: 'Exo', sans-serif;
+  --font-family-jp: 'M PLUS 1p', sans-serif;
 
   /* font size */
   --font-micro: 14px;
@@ -347,6 +346,16 @@ header {
   justify-content: space-between;
 }
 
+.about-me-kind {
+  display: flex;
+  justify-content: left;
+}
+
+.about-me-description {
+  font-style: italic;
+  line-height: 200%;
+}
+
 .img-icon-close {
   width: 40px;
   height: 40px;
@@ -421,6 +430,10 @@ header {
   position: relative;
 }
 
+.skill-contetn-left {
+  display: flex;
+}
+
 .plus-letter {
   font-size: var(--font-3x-large);
   font-weight: var(--en-weight-light);
@@ -443,13 +456,21 @@ header {
   position: absolute;
 }
 
+.colleage-img {
+  max-width: 80px;
+  max-height: 80px;
+}
+.crap {
+  max-width: 28px;
+  max-height: 28px;
+}
+
 .study-percentage {
   position: absolute;
   display: inline;
   line-height: 200px;
-  font-size: var(--font-large);
+  font-size: var(--font-medium);
   color: var(--color-normal-ivory);
-  margin-left: 30%;
   display: none;
 }
 
@@ -477,8 +498,7 @@ header {
 .project-thumbnail {
   width: 200px;
   height: 200px;
-  filter: invert(61%) sepia(38%) saturate(2069%) hue-rotate(320deg)
-    brightness(102%) contrast(115%);
+  filter: invert(61%) sepia(38%) saturate(2069%) hue-rotate(320deg) brightness(102%) contrast(115%);
   opacity: 0.3;
   padding: 0 20px;
 }
