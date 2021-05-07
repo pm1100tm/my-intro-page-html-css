@@ -1,17 +1,21 @@
 /** @format */
 
 // const
-const menu = document.querySelector(".menu-btn");
-const submenu = document.querySelector(".menu-btn-sub");
-const menuToggleBtn = document.querySelector(".menu-hamburgar-div");
-const navbar = document.querySelector(".container");
+const menu = document.querySelector('.menu-btn');
+const submenu = document.querySelector('.menu-btn-sub');
+const menuToggleBtn = document.querySelector('.menu-hamburgar-div');
+const navbar = document.querySelector('.container');
 const mediaMaxWidth = 600;
+const contactImage = document.querySelector('.contact-image');
+const github = document.querySelector('#contact-github');
+const velog = document.querySelector('#contact-velog');
+const notion = document.querySelector('#contact-notion');
 
 // menu button event : scroll to each section area.
-menu.addEventListener("click", (event) => {
+menu.addEventListener('click', (event) => {
   const section = event.target.dataset.link;
   let offsetTop = 0;
-  if ("home" != section) {
+  if ('home' != section) {
     offsetTop = document.getElementById(section).offsetTop - 70;
   } else {
     //do nothing
@@ -20,7 +24,7 @@ menu.addEventListener("click", (event) => {
   window.scrollTo({
     top: offsetTop,
     left: 0,
-    behavior: "smooth"
+    behavior: 'smooth'
   });
 
   if (window.innerWidth <= mediaMaxWidth) {
@@ -30,28 +34,43 @@ menu.addEventListener("click", (event) => {
   }
 });
 
-menuToggleBtn.addEventListener("click", () => {
-  // console.log(menu.style.display);
-  if (menu.style.display === "none") {
+menuToggleBtn.addEventListener('click', () => {
+  if (menu.style.display === 'none') {
     showMenu();
-    console.log("1");
     return false;
   } else {
     hideMenu();
-    console.log("2");
     return false;
   }
-  console.log("3");
 });
 
 function showMenu() {
-  menu.style.display = "block";
-  submenu.style.display = "flex";
-  navbar.style.height = "100%";
+  menu.style.display = 'block';
+  submenu.style.display = 'flex';
+  navbar.style.height = '100%';
 }
 
 function hideMenu() {
-  menu.style.display = "none";
-  submenu.style.display = "none";
-  navbar.style.height = "70px";
+  menu.style.display = 'none';
+  submenu.style.display = 'none';
+  navbar.style.height = '70px';
 }
+
+document.querySelector('.bt-send').addEventListener('click', (e) => {
+  e.preventDefault();
+  userName = document.querySelector('#contact-name').value;
+  if (userName) {
+    alert('Sorry, ' + userName + '. I am working on this. Please contact "tladnjsen@gmail.com"');
+  }
+  alert('Sorry, I am working on this. Please contact "tladnjsen@gmail.com"');
+});
+
+github.addEventListener('click', (event) => {
+  window.open('https://github.com/pm1100tm', '_blank');
+});
+velog.addEventListener('click', (event) => {
+  window.open('https://velog.io/@pm1100tm', '_blank');
+});
+notion.addEventListener('click', (event) => {
+  window.open('https://www.notion.so/Backend-Developer-4366b9e6c43f4d84b59644b36d09445e', '_blank');
+});
