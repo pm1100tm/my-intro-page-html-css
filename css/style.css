@@ -237,7 +237,7 @@ header {
 }
 
 .home-left-div > h1 {
-  font-size: var(--font-2x-large);
+  font-size: var(--font-large);
 }
 
 .wecoder-desc h3,
@@ -272,6 +272,7 @@ header {
   height: 150px;
   opacity: 0.7;
 }
+
 #icon-keyboard {
   align-self: flex-start;
 }
@@ -332,6 +333,12 @@ header {
   padding: 0 80px;
   width: 100%;
 }
+
+#hello-my {
+  font-size: 22px;
+  font-weight: 300;
+}
+
 /* --section home end-- */
 
 /* --section about start--*/
@@ -447,6 +454,11 @@ header {
   opacity: 0.2;
 }
 
+.emptybox:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
 .blackbox {
   padding: 0;
   margin: 0;
@@ -483,9 +495,11 @@ header {
 .about-content-div:hover .study-percentage {
   display: inline;
 }
-.about-content-div:hover .blackbox {
-  opacity: 0.7;
+
+.emptybox:hover .blackbox {
+  opacity: 0.2;
 }
+
 /* --section about end-- */
 
 /* --section project start-- */

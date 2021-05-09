@@ -6,7 +6,6 @@ const submenu = document.querySelector('.menu-btn-sub');
 const menuToggleBtn = document.querySelector('.menu-hamburgar-div');
 const navbar = document.querySelector('.container');
 const mediaMaxWidth = 600;
-const contactImage = document.querySelector('.contact-image');
 const github = document.querySelector('#contact-github');
 const velog = document.querySelector('#contact-velog');
 const notion = document.querySelector('#contact-notion');
@@ -56,14 +55,19 @@ function hideMenu() {
   navbar.style.height = '70px';
 }
 
-document.querySelector('.bt-send').addEventListener('click', (e) => {
-  e.preventDefault();
-  userName = document.querySelector('#contact-name').value;
-  if (userName) {
-    alert('Sorry, ' + userName + '. I am working on this. Please contact "tladnjsen@gmail.com"');
-  }
-  alert('Sorry, I am working on this. Please contact "tladnjsen@gmail.com"');
-});
+const workingOnEvents = document.querySelectorAll('.image-event');
+for (const workingOnEvent of workingOnEvents) {
+  workingOnEvent.addEventListener('click', (e) => {
+    e.preventDefault();
+    let workingOnMessage = "Sorry, I'm working on this. ";
+    userName = document.querySelector('#contact-name').value;
+    if (userName) {
+      alert(workingOnMessage + 'Please contact to "tladnjsen@gmail.com", Thank you, ' + userName + '.');
+    } else {
+      alert(workingOnMessage);
+    }
+  });
+}
 
 github.addEventListener('click', (event) => {
   window.open('https://github.com/pm1100tm', '_blank');
