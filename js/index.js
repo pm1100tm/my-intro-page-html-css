@@ -8,7 +8,6 @@ const navbar = document.querySelector('.container');
 const mediaMaxWidth = 600;
 const github = document.querySelector('#contact-github');
 const velog = document.querySelector('#contact-velog');
-const notion = document.querySelector('#contact-notion');
 
 // menu button event : scroll to each section area.
 menu.addEventListener('click', (event) => {
@@ -75,6 +74,14 @@ github.addEventListener('click', (event) => {
 velog.addEventListener('click', (event) => {
   window.open('https://velog.io/@pm1100tm', '_blank');
 });
-notion.addEventListener('click', (event) => {
-  window.open('https://www.notion.so/Backend-Developer-4366b9e6c43f4d84b59644b36d09445e', '_blank');
-});
+// notion.addEventListener('click', (event) => {
+//   window.open('https://www.notion.so/Backend-Developer-4366b9e6c43f4d84b59644b36d09445e', '_blank');
+// });
+
+const notion = document.querySelectorAll('.contact-notion');
+
+notion.forEach((el) =>
+  el.addEventListener('click', (event) => {
+    window.open('https://www.notion.so/Backend-Developer-4366b9e6c43f4d84b59644b36d09445e', '_blank');
+  })
+);
